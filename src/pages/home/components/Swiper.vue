@@ -54,13 +54,19 @@ export default {
 
 .wrapper {
   width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 31.25%;
+  // height: 0;
+  // overflow: hidden;
+  // padding-bottom: 31.25%;
   background-color: #eee;
+  height: 31.25vw;
+}
+
+.swiper-container {
+  height: 100%;
 }
 
 .swiper-img {
   width: 100%;
+  height: 100%;
 }
 </style>
