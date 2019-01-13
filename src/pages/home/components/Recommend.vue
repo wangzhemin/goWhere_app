@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item in list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
 
         <div class="item-info">
@@ -20,35 +20,8 @@
 
 export default {
   name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [
-        {
-          id: "0001",
-          imgUrl:
-            "https://dimg07.c-ctrip.com/images/fd/tg/g3/M00/6C/00/CggYGlYgmgKAJDqHABa1BmjqnRc404_C_190_190.jpg",
-          title: "三亚自由行",
-          desc:
-            "三亚5日自由行·初游甄选享早订&多人出行礼遇 | 多一种旅行体验 惊艳朋友圈"
-        },
-        {
-          id: "0002",
-          imgUrl:
-            "https://dimg07.c-ctrip.com/images/fd/tg/g3/M00/6C/00/CggYGlYgmgKAJDqHABa1BmjqnRc404_C_190_190.jpg",
-          title: "三亚自由行",
-          desc:
-            "三亚5日自由行·初游甄选享早订&多人出行礼遇 | 多一种旅行体验 惊艳朋友圈"
-        },
-        {
-          id: "0003",
-          imgUrl:
-            "https://dimg07.c-ctrip.com/images/fd/tg/g3/M00/6C/00/CggYGlYgmgKAJDqHABa1BmjqnRc404_C_190_190.jpg",
-          title: "三亚自由行",
-          desc:
-            "三亚5日自由行·初游甄选享早订&多人出行礼遇 | 多一种旅行体验 惊艳朋友圈"
-        }
-      ]
-    };
+  props: {
+    list: Array
   }
 };
 </script>

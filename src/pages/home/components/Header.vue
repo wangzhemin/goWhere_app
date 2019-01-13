@@ -8,21 +8,26 @@
       输入城市/景点/游玩主题
     </div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'HomeHeader'
-}
+  /* eslint-disable  */
+
+  name: "HomeHeader",
+  props: {
+    city: String
+  }
+};
 </script>
 
 <style lang="stylus" scoped>
-@import '~styles/varibles.styl'
+@import '~styles/varibles.styl';
+
 .header {
   display: flex;
   line-height: 0.86rem;
