@@ -1,27 +1,21 @@
 <template>
-  <div class="list">
-    <div class="item">6</div>
-    <div class="item">6</div>
-    <div class="item">6</div>
-    <div class="item">6</div>
-    <div class="item">6</div>
-    <div class="item">6</div>
-    <div class="item">6</div>
-    <div class="item">6</div>
-
-  </div>
+    <ul class="list">
+      <li class="item" v-for="(item,key) in cities" :key="key">{{key}}</li>
+    </ul>
 </template>
 
 <script>
 /* eslint-disable*/
 export default {
-  name: "CityAlphabet"
-};
+  name: "CityAlphabet",
+  props: { cities: Object }
+}
 </script>
 
 
 <style lang="stylus" scoped>
-@import '~styles/varibles.styl'
+@import '~styles/varibles.styl';
+
 .list {
   display: flex;
   flex-direction: column;
@@ -32,6 +26,7 @@ export default {
   bottom: 0;
   width: 0.4rem;
 }
+
 .item {
   line-height: 0.4rem;
   text-align: center;
