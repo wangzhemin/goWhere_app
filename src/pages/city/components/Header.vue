@@ -7,7 +7,10 @@
 </template>
 
 <script>
-export default {};
+/* eslint-disable*/
+export default {
+  name: 'CityHeader'
+}
 </script>
 
 <style lang="stylus" scoped>
