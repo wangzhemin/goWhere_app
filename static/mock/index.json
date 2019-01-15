@@ -1,9 +1,7 @@
 {
   "ret": true,
   "data": {
-    "city": "杭州",
-    "swiperList": [
-      {
+    "swiperList": [{
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
     }, {
@@ -16,8 +14,7 @@
       "id": "0004",
       "imgUrl": "http://img1.qunarzz.com/piao/fusion/1712/91/a275569091681d02.jpg_640x200_0519ccb9.jpg"
     }],
-    "iconList": [
-      {
+    "iconList": [{
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
       "desc": "景点门票"
@@ -54,8 +51,7 @@
       "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
       "desc": "一日游"
     }],
-    "recommendList": [
-      {
+    "recommendList": [{
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
       "title": "故宫",
@@ -81,8 +77,7 @@
       "title": "温都水城养生馆",
       "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
     }],
-    "weekendList": [
-      {
+    "weekendList": [{
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
       "title": "北京温泉排行榜",

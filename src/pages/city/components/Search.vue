@@ -5,7 +5,8 @@
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul>
-        <li class="search-item border-bottom" v-for="item in list" :key="item.id">{{item.name}}</li>
+        <li class="search-item border-bottom" v-for="item in list" :key="item.id"
+        @click="handleCityClick(item.name)">{{item.name}}</li>
         <li class="search-item border-bottom" v-show="hasNoData">没有找到该城市</li>
       </ul>
     </div>
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+/* eslint-disable*/
 import Bscroll from 'better-scroll'
 export default {
   name: 'CitySearch',
@@ -58,6 +60,12 @@ export default {
   },
   mounted () {
     this.scorll = new Bscroll(this.$refs.search)
+  },
+  methods:{
+    handleCityClick(city){
+      this.$store.commit('cityChange', city)
+      this.$router.push('/')
+    }
   }
 }
 </script>
