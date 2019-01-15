@@ -49,7 +49,7 @@ export default {
       if (this.letter) {
         const element = this.$refs[this.letter][0];
         // console.log(element);
-        this.scroll.scrollToElement(element)
+        this.scroll.scrollToElement(element);
       }
     }
   }
