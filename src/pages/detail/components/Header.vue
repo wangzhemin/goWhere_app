@@ -12,7 +12,6 @@
 </template>
 <script>
 /* eslint-disable*/
-
 export default {
   name: "DetailHeader",
   data() {
@@ -38,6 +37,9 @@ export default {
   },
   activated() {
     window.addEventListener("scroll", this.handleScroll);
+  },
+  deactivated() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 };
 </script>
@@ -72,6 +74,7 @@ export default {
   text-align: center;
   color: #fff;
   background-color: $bgColor;
+  z-index: 2;
 }
 
 .header-fixed-back {
