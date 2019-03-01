@@ -10,12 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+   
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8080',
-        pathRewrite: {
-          '^/api': '/static/mock'
-        }
+        target: 'http://localhost:8008',
+        //wampserver 的端口号 把mock下面的json放到 www下面的api文件夹中
+
+        // target: 'http://localhost:8080',
+        // pathRewrite: {
+        //   '^/api': '/static/mock'
+        // }
       }
     },
 
@@ -57,7 +61,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps

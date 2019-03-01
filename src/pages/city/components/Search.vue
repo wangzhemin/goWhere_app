@@ -59,7 +59,9 @@ export default {
     }
   },
   mounted () {
-    this.scorll = new Bscroll(this.$refs.search)
+    this.scorll = new Bscroll(this.$refs.search,{
+      click:true
+    })
   },
   methods:{
     handleCityClick(city){
@@ -97,7 +99,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: red;
+  // background: red;
   z-index: 1;
 }
 
